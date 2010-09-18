@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F135F90D12456445006DA5D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		F135F91012456445006DA5D1 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A47A9E01A0483001D3D55B /* SDLMain.m */; };
+		F135F91912456445006DA5D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F135F9511245652A006DA5D1 /* jnbpack.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F94F12456523006DA5D1 /* jnbpack.c */; };
+		F135F9521245652C006DA5D1 /* jnbunpack.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F95012456523006DA5D1 /* jnbunpack.c */; };
+		F135F9571245653F006DA5D1 /* gfx.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F9531245653F006DA5D1 /* gfx.c */; };
+		F135F9581245653F006DA5D1 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F9541245653F006DA5D1 /* input.c */; };
+		F135F9591245653F006DA5D1 /* interrpt.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F9551245653F006DA5D1 /* interrpt.c */; };
+		F135F95A1245653F006DA5D1 /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F9561245653F006DA5D1 /* sound.c */; };
+		F135F9611245656E006DA5D1 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = F135F95B1245656E006DA5D1 /* config.h */; };
+		F135F9621245656E006DA5D1 /* dj.h in Headers */ = {isa = PBXBuildFile; fileRef = F135F95C1245656E006DA5D1 /* dj.h */; };
+		F135F9631245656E006DA5D1 /* fireworks.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F95D1245656E006DA5D1 /* fireworks.c */; };
+		F135F9641245656E006DA5D1 /* globals.h in Headers */ = {isa = PBXBuildFile; fileRef = F135F95E1245656E006DA5D1 /* globals.h */; };
+		F135F9651245656E006DA5D1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F95F1245656E006DA5D1 /* main.c */; };
+		F135F9661245656E006DA5D1 /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = F135F9601245656E006DA5D1 /* menu.c */; };
+		F135FB1012456782006DA5D1 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F135FB0F12456782006DA5D1 /* SDL_mixer.framework */; };
+		F135FB3212456812006DA5D1 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F135FABD12456603006DA5D1 /* SDL.framework */; };
+		F135FB3912456858006DA5D1 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = F135FB3712456858006DA5D1 /* filter.c */; };
+		F135FB3A12456858006DA5D1 /* filter.h in Headers */ = {isa = PBXBuildFile; fileRef = F135FB3812456858006DA5D1 /* filter.h */; };
+		F135FB9C1245696F006DA5D1 /* gobpack.c in Sources */ = {isa = PBXBuildFile; fileRef = F135FB9B1245696F006DA5D1 /* gobpack.c */; };
+		F135FBC512456A74006DA5D1 /* SDLMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = F135FBC212456A65006DA5D1 /* SDLMain.nib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F135F93B12456446006DA5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F135F92F12456446006DA5D1;
+			remoteInfo = "pack (Upgraded)";
+		};
+		F135F93D12456446006DA5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F135F92312456445006DA5D1;
+			remoteInfo = "unpack (Upgraded)";
+		};
+		F135FB9F1245697A006DA5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F135FB921245695F006DA5D1 /* gobpack */;
+			remoteInfo = gobpack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		F135F92012456445006DA5D1 /* Info-JumpNBump.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-JumpNBump.plist"; sourceTree = "<group>"; };
+		F135F92112456445006DA5D1 /* JumpNBump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpNBump.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F135F92D12456446006DA5D1 /* unpack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unpack; sourceTree = BUILT_PRODUCTS_DIR; };
+		F135F93912456446006DA5D1 /* pack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pack; sourceTree = BUILT_PRODUCTS_DIR; };
+		F135F94F12456523006DA5D1 /* jnbpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jnbpack.c; sourceTree = "<group>"; };
+		F135F95012456523006DA5D1 /* jnbunpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jnbunpack.c; sourceTree = "<group>"; };
+		F135F9531245653F006DA5D1 /* gfx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gfx.c; sourceTree = "<group>"; };
+		F135F9541245653F006DA5D1 /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		F135F9551245653F006DA5D1 /* interrpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = interrpt.c; sourceTree = "<group>"; };
+		F135F9561245653F006DA5D1 /* sound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sound.c; sourceTree = "<group>"; };
+		F135F95B1245656E006DA5D1 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = SOURCE_ROOT; };
+		F135F95C1245656E006DA5D1 /* dj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dj.h; path = ../dj.h; sourceTree = SOURCE_ROOT; };
+		F135F95D1245656E006DA5D1 /* fireworks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fireworks.c; path = ../fireworks.c; sourceTree = SOURCE_ROOT; };
+		F135F95E1245656E006DA5D1 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = globals.h; path = ../globals.h; sourceTree = SOURCE_ROOT; };
+		F135F95F1245656E006DA5D1 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = SOURCE_ROOT; };
+		F135F9601245656E006DA5D1 /* menu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = menu.c; path = ../menu.c; sourceTree = SOURCE_ROOT; };
+		F135FABD12456603006DA5D1 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		F135FB0F12456782006DA5D1 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = /Library/Frameworks/SDL_mixer.framework; sourceTree = "<absolute>"; };
+		F135FB3712456858006DA5D1 /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter.c; path = ../filter.c; sourceTree = SOURCE_ROOT; };
+		F135FB3812456858006DA5D1 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = ../filter.h; sourceTree = SOURCE_ROOT; };
+		F135FB931245695F006DA5D1 /* gobpack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gobpack; sourceTree = BUILT_PRODUCTS_DIR; };
+		F135FB9B1245696F006DA5D1 /* gobpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gobpack.c; sourceTree = "<group>"; };
+		F135FBC212456A65006DA5D1 /* SDLMain.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = SDLMain.nib; path = /Library/Frameworks/SDL.framework/Versions/A/Resources/SDLMain.nib; sourceTree = "<absolute>"; };
+		F5A47A9E01A0483001D3D55B /* SDLMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F135F91812456445006DA5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135F91912456445006DA5D1 /* Cocoa.framework in Frameworks */,
+				F135FB1012456782006DA5D1 /* SDL_mixer.framework in Frameworks */,
+				F135FB3212456812006DA5D1 /* SDL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F92712456445006DA5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F93312456446006DA5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135FB911245695F006DA5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5A47A9E01A0483001D3D55B /* SDLMain.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F135F92112456445006DA5D1 /* JumpNBump.app */,
+				F135F92D12456446006DA5D1 /* unpack */,
+				F135F93912456446006DA5D1 /* pack */,
+				F135FB931245695F006DA5D1 /* gobpack */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SDL App */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F135F92012456445006DA5D1 /* Info-JumpNBump.plist */,
+			);
+			name = "SDL App";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5C435A6026C8394012A168D /* modify */,
+				F135F95B1245656E006DA5D1 /* config.h */,
+				F135F95C1245656E006DA5D1 /* dj.h */,
+				F135F95D1245656E006DA5D1 /* fireworks.c */,
+				F135FB3712456858006DA5D1 /* filter.c */,
+				F135FB3812456858006DA5D1 /* filter.h */,
+				F135F95E1245656E006DA5D1 /* globals.h */,
+				F135F95F1245656E006DA5D1 /* main.c */,
+				F135F9601245656E006DA5D1 /* menu.c */,
+				F5CA6AF5026B505E012A168D /* sdl */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F135FBC212456A65006DA5D1 /* SDLMain.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				F135FB0F12456782006DA5D1 /* SDL_mixer.framework */,
+				F135FABD12456603006DA5D1 /* SDL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5C435A6026C8394012A168D /* modify */ = {
+			isa = PBXGroup;
+			children = (
+				F135FB9B1245696F006DA5D1 /* gobpack.c */,
+				F135F94F12456523006DA5D1 /* jnbpack.c */,
+				F135F95012456523006DA5D1 /* jnbunpack.c */,
+			);
+			name = modify;
+			path = ../modify;
+			sourceTree = "<group>";
+		};
+		F5CA6AF5026B505E012A168D /* sdl */ = {
+			isa = PBXGroup;
+			children = (
+				F135F9531245653F006DA5D1 /* gfx.c */,
+				F135F9541245653F006DA5D1 /* input.c */,
+				F135F9551245653F006DA5D1 /* interrpt.c */,
+				F135F9561245653F006DA5D1 /* sound.c */,
+			);
+			name = sdl;
+			path = ../sdl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F135F90812456445006DA5D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135F9611245656E006DA5D1 /* config.h in Headers */,
+				F135F9621245656E006DA5D1 /* dj.h in Headers */,
+				F135F9641245656E006DA5D1 /* globals.h in Headers */,
+				F135FB3A12456858006DA5D1 /* filter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F92412456445006DA5D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F93012456446006DA5D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F135F90312456445006DA5D1 /* JumpNBump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F135F91C12456445006DA5D1 /* Build configuration list for PBXNativeTarget "JumpNBump" */;
+			buildPhases = (
+				F135F90812456445006DA5D1 /* Headers */,
+				F135F90C12456445006DA5D1 /* Resources */,
+				F135F90F12456445006DA5D1 /* Sources */,
+				F135F91812456445006DA5D1 /* Frameworks */,
+				F135FBA412456986006DA5D1 /* gobpack */,
+				F135F91B12456445006DA5D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F135F93C12456446006DA5D1 /* PBXTargetDependency */,
+				F135F93E12456446006DA5D1 /* PBXTargetDependency */,
+				F135FBA01245697A006DA5D1 /* PBXTargetDependency */,
+			);
+			name = JumpNBump;
+			productInstallPath = "$(HOME)/Applications";
+			productName = "SDL App";
+			productReference = F135F92112456445006DA5D1 /* JumpNBump.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F135F92312456445006DA5D1 /* unpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F135F92912456445006DA5D1 /* Build configuration list for PBXNativeTarget "unpack" */;
+			buildPhases = (
+				F135F92412456445006DA5D1 /* Headers */,
+				F135F92512456445006DA5D1 /* Sources */,
+				F135F92712456445006DA5D1 /* Frameworks */,
+				F135F92812456445006DA5D1 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unpack;
+			productInstallPath = /usr/local/bin;
+			productName = unpack;
+			productReference = F135F92D12456446006DA5D1 /* unpack */;
+			productType = "com.apple.product-type.tool";
+		};
+		F135F92F12456446006DA5D1 /* pack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F135F93512456446006DA5D1 /* Build configuration list for PBXNativeTarget "pack" */;
+			buildPhases = (
+				F135F93012456446006DA5D1 /* Headers */,
+				F135F93112456446006DA5D1 /* Sources */,
+				F135F93312456446006DA5D1 /* Frameworks */,
+				F135F93412456446006DA5D1 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pack;
+			productInstallPath = /usr/local/bin;
+			productName = pack;
+			productReference = F135F93912456446006DA5D1 /* pack */;
+			productType = "com.apple.product-type.tool";
+		};
+		F135FB921245695F006DA5D1 /* gobpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F135FB9A12456965006DA5D1 /* Build configuration list for PBXNativeTarget "gobpack" */;
+			buildPhases = (
+				F135FB901245695F006DA5D1 /* Sources */,
+				F135FB911245695F006DA5D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gobpack;
+			productName = gobpack;
+			productReference = F135FB931245695F006DA5D1 /* gobpack */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F135F8FB1245642C006DA5D1 /* Build configuration list for PBXProject "JumpNBump" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SDL App */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F135F90312456445006DA5D1 /* JumpNBump */,
+				F135F92312456445006DA5D1 /* unpack */,
+				F135F92F12456446006DA5D1 /* pack */,
+				F135FB921245695F006DA5D1 /* gobpack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F135F90C12456445006DA5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135F90D12456445006DA5D1 /* InfoPlist.strings in Resources */,
+				F135FBC512456A74006DA5D1 /* SDLMain.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F135F92812456445006DA5D1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F93412456446006DA5D1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F135F91B12456445006DA5D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd ${SRCROOT}/../data\n${BUILT_PRODUCTS_DIR}/pack -o jumpbump.dat bump.mod calib.dat death.smp fly.smp font.gob jump.mod jump.smp levelmap.txt level.pcx mask.pcx menu.pcx menumask.pcx numbers.gob objects.gob rabbit.gob scores.mod splash.smp spring.smp\nDATA_DIR=${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources/data\nif [ ! -e ${DATA_DIR} ]\nthen\n  mkdir ${DATA_DIR}\nfi\n\ncp jumpbump.dat ${DATA_DIR}/jumpbump.dat\npopd\n";
+		};
+		F135FBA412456986006DA5D1 /* gobpack */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = gobpack;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd ${SRCROOT}/../data\n${BUILT_PRODUCTS_DIR}/gobpack font\n${BUILT_PRODUCTS_DIR}/gobpack rabbit\n${BUILT_PRODUCTS_DIR}/gobpack numbers\n${BUILT_PRODUCTS_DIR}/gobpack objects";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F135F90F12456445006DA5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135F91012456445006DA5D1 /* SDLMain.m in Sources */,
+				F135F9571245653F006DA5D1 /* gfx.c in Sources */,
+				F135F9581245653F006DA5D1 /* input.c in Sources */,
+				F135F9591245653F006DA5D1 /* interrpt.c in Sources */,
+				F135F95A1245653F006DA5D1 /* sound.c in Sources */,
+				F135F9631245656E006DA5D1 /* fireworks.c in Sources */,
+				F135F9651245656E006DA5D1 /* main.c in Sources */,
+				F135F9661245656E006DA5D1 /* menu.c in Sources */,
+				F135FB3912456858006DA5D1 /* filter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F92512456445006DA5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135F9521245652C006DA5D1 /* jnbunpack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135F93112456446006DA5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135F9511245652A006DA5D1 /* jnbpack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F135FB901245695F006DA5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F135FB9C1245696F006DA5D1 /* gobpack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F135F93C12456446006DA5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F135F92F12456446006DA5D1 /* pack */;
+			targetProxy = F135F93B12456446006DA5D1 /* PBXContainerItemProxy */;
+		};
+		F135F93E12456446006DA5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F135F92312456445006DA5D1 /* unpack */;
+			targetProxy = F135F93D12456446006DA5D1 /* PBXContainerItemProxy */;
+		};
+		F135FBA01245697A006DA5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F135FB921245695F006DA5D1 /* gobpack */;
+			targetProxy = F135FB9F1245697A006DA5D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F135F8EF1245642C006DA5D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		F135F8F01245642C006DA5D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		F135F8F11245642C006DA5D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		F135F91D12456445006DA5D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"stricmp=strcasecmp",
+					"strnicmp=strncasecmp",
+					USE_SDL,
+					_THREAD_SAFE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-JumpNBump.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-funroll-loops",
+				);
+				PRODUCT_NAME = JumpNBump;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F135F91E12456445006DA5D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"stricmp=strcasecmp",
+					"strnicmp=strncasecmp",
+					USE_SDL,
+					_THREAD_SAFE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-JumpNBump.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-funroll-loops",
+				);
+				PRODUCT_NAME = JumpNBump;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F135F91F12456445006DA5D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"stricmp=strcasecmp",
+					"strnicmp=strncasecmp",
+					USE_SDL,
+					_THREAD_SAFE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-JumpNBump.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-funroll-loops",
+				);
+				PRODUCT_NAME = JumpNBump;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		F135F92A12456445006DA5D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unpack;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F135F92B12456445006DA5D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unpack;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F135F92C12456445006DA5D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unpack;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F135F93612456446006DA5D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pack;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F135F93712456446006DA5D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pack;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F135F93812456446006DA5D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pack;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F135FB951245695F006DA5D1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = gobpack;
+			};
+			name = Development;
+		};
+		F135FB961245695F006DA5D1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = gobpack;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F135FB971245695F006DA5D1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = gobpack;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F135F8FB1245642C006DA5D1 /* Build configuration list for PBXProject "JumpNBump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F135F8EF1245642C006DA5D1 /* Development */,
+				F135F8F01245642C006DA5D1 /* Deployment */,
+				F135F8F11245642C006DA5D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F135F91C12456445006DA5D1 /* Build configuration list for PBXNativeTarget "JumpNBump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F135F91D12456445006DA5D1 /* Development */,
+				F135F91E12456445006DA5D1 /* Deployment */,
+				F135F91F12456445006DA5D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F135F92912456445006DA5D1 /* Build configuration list for PBXNativeTarget "unpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F135F92A12456445006DA5D1 /* Development */,
+				F135F92B12456445006DA5D1 /* Deployment */,
+				F135F92C12456445006DA5D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F135F93512456446006DA5D1 /* Build configuration list for PBXNativeTarget "pack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F135F93612456446006DA5D1 /* Development */,
+				F135F93712456446006DA5D1 /* Deployment */,
+				F135F93812456446006DA5D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F135FB9A12456965006DA5D1 /* Build configuration list for PBXNativeTarget "gobpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F135FB951245695F006DA5D1 /* Development */,
+				F135FB961245695F006DA5D1 /* Deployment */,
+				F135FB971245695F006DA5D1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
