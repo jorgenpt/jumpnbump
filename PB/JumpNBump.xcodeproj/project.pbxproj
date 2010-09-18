@@ -49,7 +49,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F135FB921245695F006DA5D1 /* gobpack */;
+			remoteGlobalIDString = F135FB921245695F006DA5D1;
 			remoteInfo = gobpack;
 		};
 /* End PBXContainerItemProxy section */
