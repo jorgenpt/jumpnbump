@@ -28,10 +28,18 @@
 #ifndef _MSC_VER
 #include <unistd.h>
 #endif
-#include "SDL.h"
+#if __APPLE__
+# import <SDL/SDL.h>
+#else
+# include "SDL.h"
+#endif
 
 #ifndef NO_SDL_MIXER
-#include "SDL_mixer.h"
+#if __APPLE__
+# import <SDL_mixer/SDL_mixer.h>
+#else
+# include "SDL_mixer.h"
+#endif
 
 static Mix_Music *current_music = (Mix_Music *) NULL;
 #endif

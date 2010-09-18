@@ -33,7 +33,7 @@
     Feel free to customize this file to suit your needs
 */
 
-#import "SDL.h"
+#import <SDL/SDL.h>
 
 /* SDLMain.h */
 #import <Cocoa/Cocoa.h>
@@ -196,7 +196,7 @@ void MacOSX_SetCWD(char **argv) {
 /* Main entry point to executable - should *not* be SDL_main! */
 int main (int argc, char **argv)
 {
-
+  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     /* Copy the arguments into a global variable */
     int i;
     
@@ -218,6 +218,7 @@ int main (int argc, char **argv)
 
     [SDLApplication poseAsClass:[NSApplication class]];
     NSApplicationMain (argc, argv);
-
+  [pool drain];
+  
     return 0;
 }

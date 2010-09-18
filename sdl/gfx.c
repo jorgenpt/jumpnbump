@@ -24,15 +24,17 @@
  */
 
 #include "globals.h"
-#include "SDL_endian.h"
 #include "filter.h"
 
 #ifdef _MSC_VER
     #include "jumpnbump32.xpm"
+    #include "SDL_endian.h"
 #elif __APPLE__
     #include "jumpnbump128.xpm"
+    #import <SDL/SDL_endian.h>
 #else
     #include "jumpnbump64.xpm"
+    #include "SDL_endian.h"
 #endif
 SDL_Surface *icon;
 
