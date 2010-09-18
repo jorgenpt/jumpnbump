@@ -264,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F135F91C12456445006DA5D1 /* Build configuration list for PBXNativeTarget "JumpNBump" */;
 			buildPhases = (
+				F135FC0B12457278006DA5D1 /* Make globals.h */,
 				F135F90812456445006DA5D1 /* Headers */,
 				F135F90C12456445006DA5D1 /* Resources */,
 				F135F90F12456445006DA5D1 /* Sources */,
@@ -417,6 +418,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "pushd ${SRCROOT}/../data\n${BUILT_PRODUCTS_DIR}/gobpack font\n${BUILT_PRODUCTS_DIR}/gobpack rabbit\n${BUILT_PRODUCTS_DIR}/gobpack numbers\n${BUILT_PRODUCTS_DIR}/gobpack objects";
+		};
+		F135FC0B12457278006DA5D1 /* Make globals.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make globals.h";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd ${SRCROOT}/..\nif [ ! -e globals.h ] \nthen\n  cp globals.pre globals.h\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
