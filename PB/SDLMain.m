@@ -33,7 +33,7 @@
     Feel free to customize this file to suit your needs
 */
 
-#import <SDL/SDL.h>
+#import <SDL2/SDL.h>
 
 /* SDLMain.h */
 #import <Cocoa/Cocoa.h>

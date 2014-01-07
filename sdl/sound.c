@@ -29,14 +29,14 @@
 #include <unistd.h>
 #endif
 #if __APPLE__
-# import <SDL/SDL.h>
+# import <SDL2/SDL.h>
 #else
 # include "SDL.h"
 #endif
 
 #ifndef NO_SDL_MIXER
 #if __APPLE__
-# import <SDL_mixer/SDL_mixer.h>
+# import <SDL2/SDL_mixer.h>
 #else
 # include "SDL_mixer.h"
 #endif
