@@ -1,1 +1,10 @@
+*.o
+*.a
+*.gob
+*.dat
 globals.h
+gobpack
+jnbmenu.tcl
+jnbpack
+jnbunpack
+jumpnbump
